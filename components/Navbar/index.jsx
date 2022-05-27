@@ -14,7 +14,7 @@ export const Navbar = () => {
                 <div class="flex space-x-8">
                   <a
                     href="#"
-                    class="text-gray-900 pl-0 px-3 py-2 rounded-md text-sm font-medium"
+                    class="text-gray-900 d pl-0 px-3 py-2 rounded-md text-sm font-medium"
                     aria-current="page"
                   >
                     Home
@@ -22,21 +22,21 @@ export const Navbar = () => {
 
                   <a
                     href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    class="text-gray-500 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Guides
                   </a>
 
                   <a
                     href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    class="text-gray-500 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Flights
                   </a>
 
                   <a
                     href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    class="text-gray-500 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Abouts
                   </a>
