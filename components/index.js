@@ -4,3 +4,4 @@ export { Layout } from "./Layout";
 export { Footer } from "./Footer";
 export { Contact } from "./Contact";
 export { Card } from "./Card";
+export { Profile } from "./Profil"

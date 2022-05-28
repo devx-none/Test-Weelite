@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Card = ({ imageUrl, title, text }) => {
     return (
       
-        <Layout>
+        
             <div className="" >
                 <div className="w-full">
                 <Image src={imageUrl} alt="hero" width="60" height="40" layout="responsive" className="object-cover" />
@@ -18,6 +18,6 @@ export const Card = ({ imageUrl, title, text }) => {
 
             </div>
      
-    </Layout>
+   
   );
 };

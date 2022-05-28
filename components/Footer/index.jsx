@@ -18,10 +18,11 @@ export const Footer = () => {
                 class="
             uppercase
             font-bold
-            mb-4
+            ml-5
             items-center
             justify-center
             md:justify-start
+            text-5xl
           "
               >
                 My Log Travels

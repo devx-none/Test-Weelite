@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Hero = () => {
   return (
     <Layout>
-      <div className="flex mt-20 justify-between w-full bg-[url('../../public/assets/images/bg-hero.png')">
+      <div className="flex my-20 justify-between w-fulll bg-[url('/assets/images/bg-hero.pngz')]">
         <div className="flex flex-col justify-between w-1/3">
           <div className="flex flex-col  justify-center items-center ">
             <h6 className="text-7xl font-bold  ">

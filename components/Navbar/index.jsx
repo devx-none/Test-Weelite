@@ -2,6 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Layout } from "../Layout";
+import Link from "next/link";
 
 export const Navbar = () => {
   return (
@@ -12,13 +13,14 @@ export const Navbar = () => {
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
               <div class="hidden sm:block ">
                 <div class="flex space-x-8">
-                  <a
-                    href="#"
-                    class="text-gray-900 d pl-0 px-3 py-2 rounded-md text-sm font-medium"
-                    aria-current="page"
-                  >
-                    Home
-                  </a>
+                  <Link href="/">
+                    <a
+                      href="#"
+                      class="text-gray-900 d pl-0 px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Home
+                    </a>
+                  </Link>
 
                   <a
                     href="#"
@@ -44,10 +46,11 @@ export const Navbar = () => {
               </div>
             </div>
             <div class="hidden sm:block sm:ml-6 absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <button type="button" class="button-primary">
-                Contact Us
-              </button>
-
+              <Link href="/contact">
+                <button type="button" class="button-primary">
+                  Contact Us
+                </button>
+              </Link>
               <div class="ml-3 relative">
                 <div>
                   <button
