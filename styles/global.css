@@ -18,3 +18,21 @@
     @apply transition-all border-solid p-2 w-60 border-2 rounded hover:border-black bg-black hover:bg-transparent font-bold hover:bg-gray-200 hover:text-black text-white;
   }
 }
+.swiper-button-prev,
+.swiper-button-next {
+  padding: 35px 40px;
+  border : 2px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  
+  color: #000
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: -10px;
+  left: auto;
+}
