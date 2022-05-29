@@ -34,7 +34,7 @@ export const Contact = () => {
 
   return (
     <Layout>
-      <div className="flex mt-20 mb-20 justify-between w-full bg-[url('../../public/assets/images/bg-hero.png')">
+      <div className="flex mt-20 mb-20 justify-between w-full ')">
         <div className="flex flex-col justify-between w-1/3">
           <div className="flex flex-col  justify-center items-center ">
             <h3 className="text-7xl font-bold  ">Be updated</h3>
@@ -46,14 +46,11 @@ export const Contact = () => {
               placeholder="First Name*"
               onChange={(e) => setFirstName(e.target.value)}
               value={firstName}
-              
-              
             />
             <input
               type="text"
               className="border border-2 border-solid border-black p-2 m-5  w-full "
               placeholder="Last Name*"
-
               onChange={(e) => setLastName(e.target.value)}
               value={lastName}
             />
@@ -63,7 +60,6 @@ export const Contact = () => {
               placeholder="Email Subject*"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
-
             />
             <textarea
               type="text"
@@ -73,7 +69,10 @@ export const Contact = () => {
               value={message}
             />
             <div className="flex flex-col  w-full m-5 ">
-              <button className="button-secondary  w-full " onClick={handleSubmit}>
+              <button
+                className="button-secondary  w-full "
+                onClick={handleSubmit}
+              >
                 Submit Email
               </button>
             </div>

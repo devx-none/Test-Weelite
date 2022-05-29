@@ -4,10 +4,9 @@ import { Navbar, Footer, Contact, Layout } from "../components";
 
 //get data from localStorage
 
-
 const contact = () => {
-    const [dataContact, setDataContact] = useState([]);
-    const [loading, setLoading] = useState(true);
+  const [dataContact, setDataContact] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const getData = () => {
     const data = localStorage.getItem("contacts");
@@ -17,12 +16,11 @@ const contact = () => {
     return [];
   };
 
-    useEffect(() => {
-      
+  useEffect(() => {
     setDataContact(getData());
     setLoading(false);
   }, []);
-    
+
   return (
     <>
       {" "}
@@ -71,27 +69,26 @@ const contact = () => {
                         </th>
                       </tr>
                     </thead>
-                                      <tbody>
-                                          {dataContact.map((item, index) => (
-                                              <tr className="border-b" key={index}>
-                                                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                      {index + 1}
-                                                  </td>
-                                                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                                      {item.firstName}
-                                                  </td>
-                                                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                                      {item.lastName}
-                                                  </td>
-                                                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                                      {item.email}
-                                                  </td>
-                                                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                                      {item.message}
-                                                  </td>
-                                
-                                              </tr>
-                                          ))}
+                    <tbody>
+                      {dataContact.map((item, index) => (
+                        <tr className="border-b" key={index}>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                            {index + 1}
+                          </td>
+                          <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            {item.firstName}
+                          </td>
+                          <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            {item.lastName}
+                          </td>
+                          <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            {item.email}
+                          </td>
+                          <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            {item.message}
+                          </td>
+                        </tr>
+                      ))}
                     </tbody>
                   </table>
                 </div>
