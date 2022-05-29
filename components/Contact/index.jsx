@@ -78,7 +78,7 @@ export const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="object-cover object-fit h-full bg-green-600 w-1/2">
+        <div className="object-cover object-fit h-full  w-1/2">
           <Image
             src="/assets/images/Image-hero.png"
             alt="hero"

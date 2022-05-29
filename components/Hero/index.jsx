@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Hero = () => {
   return (
     <Layout>
-      <div className="flex my-20 justify-between w-fulll bg-[url('/assets/images/bg-hero.pngz')]">
+      <div className="flex my-20 justify-between w-fulll bg-[url('/assets/images/Objects3.png')] bg-no-repeat bg-right-bottom ')]">
         <div className="flex flex-col justify-between w-1/3">
           <div className="flex flex-col  justify-center items-center ">
             <h6 className="text-7xl font-bold  ">
@@ -24,7 +24,7 @@ export const Hero = () => {
             <button className="button-secondary">Reserve Ticket</button>
           </div>
         </div>
-        <div className="object-cover object-fit h-full bg-green-600 w-1/2">
+        <div className="object-cover object-fit h-full  w-1/2">
           <Image
             src="/assets/images/Image-hero.png"
             alt="hero"
